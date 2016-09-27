@@ -1,10 +1,11 @@
 /*
  *
- * Валентюкевич Егор
- * [hcs-201608]
+ *              Валентюкевич Егор
+ *                [hcs-201608]
  *
  *  Найти минимальное количество монет для выдачи сдачи.
- * 
+ *
+ *  check50 --> https://sandbox.cs50.net/checks/10dcb72762424b0bbc83c477964a004b
  */
 
 #include <stdio.h>
@@ -13,7 +14,7 @@
  
 int main(void)
 {
-    // объявить переменную типа float
+
     float summa;
  
     // получить ввод от пользователя
@@ -32,51 +33,32 @@ int main(void)
     
     // изменить float "summa" в integer "summa"
     int summa2 = (int) summa;
-    // создать переменные счетчика для каджой монеты
-    int quarters = 0;
-    int dimes = 0;
-    int nickels = 0;
-    int pennies = 0;
-    // и переменную счетчика для общего количества монет
+
     int counter = 0;
     
-    // пока сумма >= 25c
     while(summa2 >= 25)
     {
-        // уменьшить на 25c
         summa2 = summa2 - 25; 
-        // увеличить счетчик на 1
-        quarters = quarters + 1;
         counter++;
     }
     
     while(summa2 >= 10)
     {
-        
         summa2 = summa2 - 10;
-        
-        dimes = dimes + 1;
         counter++;
     }
     
     while(summa2 >= 5)
     {
-        
         summa2 = summa2 - 5;
-        
-        nickels = nickels +1;
         counter++;
     }
     
     while(summa2 >= 1)
     {
-        
         summa2 = summa2 - 1;
-                
-        pennies = pennies + 1;
         counter++;
     }
     // вывести на экран используемое количество монет
-    printf("Quarters: %d\nDimes: %d\nNickels: %d\nPennies: %d\n\n", quarters, dimes, nickels, pennies);
-    printf("All coins:%d\n", counter);
+    printf("%d\n", counter);
 }
