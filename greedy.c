@@ -21,7 +21,7 @@ int main(void)
     // если зачение меньше нуля, спрашивать повторно, пока не получит правильный ответ
     do
     {
-        printf("Введите сумму: ");
+        printf("Enter the sum: ");
         summa = GetFloat();
     }
     while (summa < 0);
