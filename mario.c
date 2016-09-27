@@ -17,7 +17,7 @@ int main(void)
     int height = 0;
             
     do {
-    printf("Введите целое число(от 1 до 23): "); //запрашиваю у пользователя значение для высоты
+    printf("Enter an integer(от 1 до 23): "); //запрашиваю у пользователя значение для высоты
     height = GetInt();
     if (height == 0)
     return 0;
@@ -39,7 +39,7 @@ int main(void)
             printf("#\n"); // # - чтобы получить первые два столбика одинаковой высоты
         }
     } else {
-        printf("Попробуйте ещё разок: ");
+        printf("Try again: ");
         height = GetInt();
         } 
 }
