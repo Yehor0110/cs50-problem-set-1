@@ -1,9 +1,19 @@
+/*
+*     Валентюкевич Егор
+*
+*     [hcs-201608]
+*
+*      water.c
+*      check50 --> https://sandbox.cs50.net/checks/0aa3e662820a4f64a63718dd203e6d5d
+*/
+
 #include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
    int min, bot;
+ 
     do {
      printf("Сколько времени вы проводите в душе?\n");
      min = get_int(); // запрашиваем время
